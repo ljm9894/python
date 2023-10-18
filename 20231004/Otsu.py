@@ -15,7 +15,7 @@ def otsus_thresholding():
               'HISTOGRAM', "OTSU's THRESHOLDING", 'GAUSSIAN FILTERED IMAGE', 'HISTOGRAM', "OTSU's TRESHOLDING"]
     images = [img, 0, thresh_1, img, 0, thresh_2, blur, 0, thresh_3]
 
-    fig = plt.figure()
+    # fig = plt.figure()
     # fig.canvas.set_window_title("JetsonNano_Thresholding")
     for i in range(3):
         plt.subplot(3, 3, i*3+1), plt.imshow(images[i*3], 'gray')
